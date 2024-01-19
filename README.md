@@ -1,7 +1,7 @@
-# gallery-javascript
-My first gallery page in:
+## gallery-javascript
+# My first gallery page in:
 
-HTML.
-CSS and SASS.
-JavaScript.
-Roll-up.
+# HTML.
+# CSS and SASS.
+# JavaScript.
+# Roll-up.
