@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="public/bundle.css" />
+		<script defer src="./public/bundle.js"></script>
+		<title>Mi viaje por el mundo</title>
+	</head>
+	<body>
+		<header>
+
+			<div class="hero">
+				<h3 class="hero__subtitulo">NEW GALLERY PROJECT</h3>
+				<h1 class="hero__titulo">THE WORLD</h1>
+			</div>
+		</header>
+		<main>
+			<div class="contenedor">
+				<div class="categorias" id="categorias"></div>
+			</div>
+		</main>
+		<section class="galeria" id="galeria">
+			<div class="galeria__overlay" data-accion="cerrar-galeria">
+				<div class="galeria__contenedor">
+					<div class="galeria__contenedor-titulo">
+						<h3 class="galeria__titulo"></h3>
+						<button class="galeria__btn" data-accion="cerrar-galeria">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="galeria__icono-boton"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="galeria__contenedor-imagen-activa" id="imagenActiva">
+						<img src="./img/africa/1.jpg" class="galeria__imagen" />
+					</div>
+					<div class="galeria__contenedor-carousel">
+						<p class="galeria__descripcion-imagen-activa"></p>                                                                                                                                          "></p>
+						<div class="galeria__carousel">
+							<div class="galeria__carousel-atras">
+								<button class="galeria__btn" data-accion="anterior-slide">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="galeria__icono-boton"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div class="galeria__carousel-slides"></div>
+							<div class="galeria__carousel-adelante">
+								<button class="galeria__btn" data-accion="siguiente-slide">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="galeria__icono-boton"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+										/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Botones de Anterior y Siguiente -->
+					<button class="galeria__btn galeria__btn--anterior" data-accion="anterior-imagen">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+							class="galeria__icono-boton"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+							/>
+						</svg>
+					</button>
+					<button class="galeria__btn galeria__btn--siguiente" data-accion="siguiente-imagen">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+							class="galeria__icono-boton"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="contenedor">
+				<p class="creditos">By Fernando V. Glez.</p>
+			</div>
+		</footer>
+	</body>
+</html>
